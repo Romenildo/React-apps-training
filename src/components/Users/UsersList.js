@@ -5,14 +5,13 @@ import classes from "./UsersList.module.css"
 const UserList = props =>{
 
     return (
-        
         <Card className={classes.users}>
             <ul>
-                {props.users.map((user) =>{
+                {props.users.map((user) =>(//aqui é um parenteses nao chaves {}
                     <li>
                         {user.name} ({user.age} years old)
                     </li>
-                })}
+                ))}
             </ul>
         </Card>
     );
